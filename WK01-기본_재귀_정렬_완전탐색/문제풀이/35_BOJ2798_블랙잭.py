@@ -15,3 +15,4 @@ for i in range(len(cards)):
                 result = sum_cards
 
 print(result)
+

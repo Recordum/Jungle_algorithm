@@ -11,12 +11,11 @@ def dfs_queen(row_number):
     if row_number == n:
         result += 1
         return
-    else:
-        for i in range(n):
+
+    for i in range(n):
             row[row_number] = i
             if is_validate_location(row_number):
                 dfs_queen(row_number + 1)
-
 
 if __name__ == '__main__':
     n = int(input())
