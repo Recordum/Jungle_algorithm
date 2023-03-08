@@ -41,11 +41,6 @@ elif k == 26:
 learned_spell_list = [0] * 26
 for i in ('a','n','t','i','c'):
     learned_spell_list[ord(i) - ord('a')] = 1
-# learned_spell_list[ord('a') - 97] = 1
-# learned_spell_list[ord('n') - 97] = 1
-# learned_spell_list[ord('t') - 97] = 1
-# learned_spell_list[ord('i') - 97] = 1
-# learned_spell_list[ord('c') - 97] = 1
 
 dfs_teach(k - 5, 0)
 print(result)

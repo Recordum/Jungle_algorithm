@@ -13,5 +13,4 @@ for card in permutations(cards, k):
         new_card = new_card + card[i]
     s.add(new_card)
 
-
 print(len(s))
