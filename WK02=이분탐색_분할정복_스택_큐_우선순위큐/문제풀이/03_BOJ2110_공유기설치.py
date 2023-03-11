@@ -22,10 +22,10 @@ def binary_distance(start,end):
 
 input = sys.stdin.readline
 n,c = map(int, input().split())
-house_list = [0]*n
+
 result = 0
-for i in range(n):
-    house_list[i] = int(input())
+
+house_list = [int(input()) for _ in range(n)]
 
 house_list.sort()
 
