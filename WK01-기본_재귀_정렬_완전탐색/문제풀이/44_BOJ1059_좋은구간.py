@@ -6,14 +6,14 @@ numbers = sorted(list(map(int, input().split())))
 
 n = int(input())
 
-for number in numbers:
-    if n == number:
+for temp in numbers:
+    if n == temp:
         print(0)
         exit()
-    if n > number:
-        min_number = number + 1
-    if n < number:
-        max_number = number - 1
+    if n > temp:
+        min_number = temp + 1
+    if n < temp:
+        max_number = temp - 1
         break
 
 if n < numbers[0]:
