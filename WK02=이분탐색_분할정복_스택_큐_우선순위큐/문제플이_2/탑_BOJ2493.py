@@ -15,7 +15,6 @@ for index, tower in enumerate(tower_list):
         tower_stack.pop()
         if not tower_stack:
             break
-
     if tower_stack:
         result[index] = tower_stack[-1][1] + 1
     else :
