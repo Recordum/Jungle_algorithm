@@ -19,6 +19,7 @@ def mst_kruskal():
                 root[root_a] = root_b
             result += cost
     return
+
 result = 0
 v, n = map(int, input().split())
 edges= []
