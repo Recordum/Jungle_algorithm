@@ -20,13 +20,12 @@ def bfs_heap():
                 else :
                     heapq.heappush(hq, [wall, next_row, next_col])
             if next_row == n-1 and next_col == n-1:
-                result = min(result, wall)
+                return wall
     return
 
 
 
 flag = 0
-result = 1e9
 d_row = [1,0,-1,0]
 d_col = [0,1,0,-1]
 end_row = 0
@@ -34,5 +33,5 @@ end_col = 0
 n = int(input())
 maze = [list(map(int, input().rstrip())) for _ in range(n)]
 visited = [[False for _ in range(n)] for _ in range(n)]
-bfs_heap()
+result = bfs_heap()
 print(result)
