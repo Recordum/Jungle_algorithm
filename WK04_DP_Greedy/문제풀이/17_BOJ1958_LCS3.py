@@ -1,11 +1,6 @@
 import sys
 input = sys.stdin.readline
 
-
-
-
-
-result = 0
 first = input().rstrip()
 second = input().rstrip()
 third = input().rstrip()
