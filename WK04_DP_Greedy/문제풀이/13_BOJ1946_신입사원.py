@@ -16,4 +16,3 @@ for t in range(test_case):
     result.append(count)
 for ans in result:
     print(ans)
-
