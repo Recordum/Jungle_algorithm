@@ -1,4 +1,6 @@
 import sys
+from bisect import bisect
+
 input = sys.stdin.readline
 
 n = int(input())
