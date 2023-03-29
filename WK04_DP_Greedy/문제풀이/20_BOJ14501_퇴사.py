@@ -1,6 +1,8 @@
 import sys
-input = sys.stdin.readline
+from functools import cache
 
+input = sys.stdin.readline
+sys.setrecursionlimit(10**6)
 def dfs(start, time, value):
     if start == n - 1:
         if time == 1:
@@ -25,5 +27,7 @@ n = int(input())
 counseling = [list(map(int, input().split())) for _ in range(n)]
 dp = [0] * n
 for i in range(len(counseling)):
+    if dp[i] >= counseling[i][1]:
+        continue
     dfs(i, counseling[i][0], counseling[i][1])
 print(max(dp))
