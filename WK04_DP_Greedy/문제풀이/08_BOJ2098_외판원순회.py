@@ -19,3 +19,4 @@ INF = int(1e9)
 dp = [[INF] * (1 << n) for _ in range(n)]
 cost_map = [list(map(int,input().split())) for _ in range(n)]
 print(dfs_traval(0,1))
+
