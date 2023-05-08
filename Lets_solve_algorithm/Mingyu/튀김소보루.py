@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 
 n, s = map(int, input().split())
-
+# 정답
 m = int(input())
 people = [int(input()) for _ in range(m)]
 current_time = 0
