@@ -19,7 +19,7 @@ def mst():
             if root_start < root_next:
                 root[root_next] = root_start
             else:
-                root[root_start] = root_next
+                root[root_start] = root_next 
             result += cost
             divide_road_cost = max(cost, divide_road_cost)
     return
